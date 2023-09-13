@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="./src/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_child">
+        <div class="section_one">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div class="section_two">
+          <p class="free_trial">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </p>
+          <div class="form">
+            <div>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="First Name"
+              />
+              <i class="fname_error_icon icon"
+                ><img src="./images/icon-error.svg" alt=""
+              /></i>
+              <p class="fname_error_message error">
+                First Name cannot be empty
+              </p>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="lname"
+                id="lname"
+                placeholder="Last Name"
+              />
+              <i class="lname_error_icon icon"
+                ><img src="./images/icon-error.svg" alt=""
+              /></i>
+              <p class="lname_error_message error">Last Name cannot be empty</p>
+            </div>
+            <div>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <i class="email_error_icon icon"
+                ><img src="./images/icon-error.svg" alt=""
+              /></i>
+              <p class="email_error_message error">
+                Looks like this is not an email
+              </p>
+            </div>
+            <div>
+              <input
+                type="password"
+                name="psword"
+                id="psword"
+                placeholder="Password"
+              />
+              <i class="password_error_icon icon"
+                ><img src="./images/icon-error.svg" alt=""
+              /></i>
+              <div class="error_msg_show_psw">
+                <p class="show_password">Show Password</p>
+                <p class="password_error_message error">
+                  Looks like this is not a valid password
+                </p>
+              </div>
+            </div>
+
+            <button>Claim your free trial</button>
+            <h5>
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </h5>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">EA-dav</a>.
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="./dist/bundle.js"></script>
+</html>
